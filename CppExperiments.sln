@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CMemoryAllocationTest", "CM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniquePtrTest", "UniquePtrTest\UniquePtrTest.vcxproj", "{2CF9F98F-39F8-44FB-A444-FC7E1707E3F5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedPtrTest", "SharedPtrTest\SharedPtrTest.vcxproj", "{5F8E98D9-29BE-4F71-A50B-6788D0313521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{2CF9F98F-39F8-44FB-A444-FC7E1707E3F5}.Release|x64.Build.0 = Release|x64
 		{2CF9F98F-39F8-44FB-A444-FC7E1707E3F5}.Release|x86.ActiveCfg = Release|Win32
 		{2CF9F98F-39F8-44FB-A444-FC7E1707E3F5}.Release|x86.Build.0 = Release|Win32
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Debug|x64.ActiveCfg = Debug|x64
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Debug|x64.Build.0 = Debug|x64
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Debug|x86.Build.0 = Debug|Win32
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Release|x64.ActiveCfg = Release|x64
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Release|x64.Build.0 = Release|x64
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Release|x86.ActiveCfg = Release|Win32
+		{5F8E98D9-29BE-4F71-A50B-6788D0313521}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

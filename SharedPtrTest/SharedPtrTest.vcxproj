@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2cf9f98f-39f8-44fb-a444-fc7e1707e3f5}</ProjectGuid>
-    <RootNamespace>UniquePtrTest</RootNamespace>
+    <ProjectGuid>{5f8e98d9-29be-4f71-a50b-6788d0313521}</ProjectGuid>
+    <RootNamespace>SharedPtrTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="UniquePtrTest.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Person.h" />
+    <ClCompile Include="SharedPtrTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
