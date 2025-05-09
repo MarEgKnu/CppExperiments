@@ -32,6 +32,7 @@ int* reallocTest(int* inptr, int size, const char* desc = "realloc:\n") {
     // reallocate the input pointer to 20 bytes, or 5 integers.
     inptr = (int*)realloc(inptr, size);
     std::cout << "realloc:\n";
+    void* voidPtr = inptr;
     for (int i = 0; i < size / sizeof(int);i++) {
         // print each item out, and we can see the existing data has been cleared.
         std::cout << inptr[i] << "\n";

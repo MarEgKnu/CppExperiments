@@ -25,6 +25,8 @@ void PointerMathTest() {
     std::cout << "First element pointer addr: " << elementptr << "\n";
     std::cout << "First element: " << *elementptr << "\n";
 
+    // incremenet the int which the pointer is pointing to
+    (*elementptr)++;
     // increment the pointer, it now refers to the next element in the array
     elementptr++;
     std::cout << "Second element pointer addr: " << elementptr << "\n";
