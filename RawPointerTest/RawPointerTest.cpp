@@ -48,6 +48,12 @@ int main()
 {
     PointerToStackTest();
     PointerMathTest();
+
+    int integer = 12345;
+    // get pointer from integer
+    int* intPtr = &integer;
+    // cast intPtr to a char pointer
+    char* charPtr = (char*)intPtr;
 }
 
 
