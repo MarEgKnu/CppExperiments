@@ -11,6 +11,8 @@ void TestLocalScope() {
 
     // this is to show that you can use a runtime value to decide array size when you use free store allocation. 
     int* arrTwo = new int[rand()];
+    // create another static variable for the duration of the entire program, but inside a local function with the static keyword
+    static int staticIntTwo = 15;
 
     // once we exit scope, arrTwo will be destructed, but not the data it points to! So we got a memory leak
 }

@@ -11,8 +11,7 @@ void createPerson(int* arr) {
 int main()
 {
     std::cout << "Start of program\n";
-    int* arr = new int[5] {1,4,7,7,10}; // allocate memory on heap with "new" operator, assign to pointer
-    createPerson(arr);
+    createPerson(new int[5] {1, 4, 7, 7, 10}); // allocate memory on heap with "new" operator
     std::cout << "End of program\n";
 }
 
