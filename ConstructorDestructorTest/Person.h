@@ -6,7 +6,7 @@ public:
 	int* grades;
 
 	// consttructor
-	Person(int _grades[]);
+	Person(int _grades);
 	// destructor
 	~Person();
 

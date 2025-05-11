@@ -3,15 +3,16 @@
 #include <iostream>
 
 
-void createPerson(int* arr) {
+void createPerson(int grades) {
     // create person, once out of scope the destructor will be run and the underlying array will be deleted
-    Person p = Person(arr);
+    Person p = Person(grades);
 }
 
 int main()
 {
+    int grades = 5;
     std::cout << "Start of program\n";
-    createPerson(new int[5] {1, 4, 7, 7, 10}); // allocate memory on heap with "new" operator
+    createPerson(grades); 
     std::cout << "End of program\n";
 }
 
