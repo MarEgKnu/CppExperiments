@@ -17,6 +17,8 @@ void printPersonDataRef(const Person& person) {
 void uniquePtrTest() {
 	// create unique ptr to new instance of Person allocated on free store, using the default deleter
 	std::unique_ptr<Person> uniquePersonPtr = std::unique_ptr<Person>(new Person("Marius", 25));
+	//using make_unique
+	uniquePersonPtr = std::make_unique<Person>("Marius", 25);
 	// only allowed to move the unique_ptr like so, not allowed to copy it
 	std::unique_ptr<Person> uniquePersonPtr2 = std::unique_ptr<Person>(move(uniquePersonPtr));
 	uniquePersonPtr2->Name = "Marius K";
