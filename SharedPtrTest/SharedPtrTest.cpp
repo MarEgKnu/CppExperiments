@@ -31,13 +31,13 @@ void weakPtrTest() {
 	srand(time(0));
 	// create new shared ptr
 	std::shared_ptr<Person> sharedPersonPtr = std::shared_ptr<Person>(new Person("Julius", 22));
+	// create weak ptr from the shared ptr.
+	std::weak_ptr<Person> weakPersonPtr = std::weak_ptr<Person>(sharedPersonPtr);
 	// there is a 50% chance that the sharedPtr will be reset, ie deleted.
 	int randomInt = rand();
 	if ((randomInt % 2) == 0) {
 		sharedPersonPtr.reset();
 	}
-	// create weak ptr from the shared ptr.
-	std::weak_ptr<Person> weakPersonPtr = std::weak_ptr<Person>(sharedPersonPtr);
 	// if the shared ptr was deleted before, then the if statement fails. If the weak ptr is still valid, then it proceeds and returns a new shared ptr "p".
 	// this means the underlying object will not be deleted even if the last shared_ptr is deleted after lock() is called, as the new shared ptr will increment the use_count by 1.
 	// when the new shared_ptr goes out of the if statement, it is also deleted.
