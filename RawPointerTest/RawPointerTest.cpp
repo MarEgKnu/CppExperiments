@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include "Person.h"
 
 void PointerToStackTest() {
     int int1 = 23456;
@@ -18,6 +19,15 @@ void PointerToStackTest() {
 void PointerMathTest() {
     // create array of 10 ints on the stack
     int intArray[10]{ 1,2,3,4,5,6,7,8,9,10 };
+
+    // create new person on stack, get a pointer to it, and use the arrow syntax to access a member
+    Person p = Person(5);
+    Person* personPtr = &p;
+    std::cout << personPtr->grades << "\n";
+    // is the same as
+    std::cout << (*personPtr).grades << "\n";
+
+
 
     // get pointer to the first element in the array
     int* elementptr = &intArray[0];
