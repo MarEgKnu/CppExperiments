@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGCExample", "CSharpGC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemControlExample", "MemControlExample\MemControlExample.vcxproj", "{373DD014-6BFD-4F17-901D-5049CEC499F6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResourceManagementIssues", "ResourceManagementIssues\ResourceManagementIssues.vcxproj", "{C7D40A3A-1E43-40C6-92DF-228A573A6031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +225,18 @@ Global
 		{373DD014-6BFD-4F17-901D-5049CEC499F6}.Release|x64.Build.0 = Release|x64
 		{373DD014-6BFD-4F17-901D-5049CEC499F6}.Release|x86.ActiveCfg = Release|Win32
 		{373DD014-6BFD-4F17-901D-5049CEC499F6}.Release|x86.Build.0 = Release|Win32
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|Any CPU.Build.0 = Debug|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|x64.ActiveCfg = Debug|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|x64.Build.0 = Debug|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|x86.ActiveCfg = Debug|Win32
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Debug|x86.Build.0 = Debug|Win32
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|Any CPU.ActiveCfg = Release|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|Any CPU.Build.0 = Release|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|x64.ActiveCfg = Release|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|x64.Build.0 = Release|x64
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|x86.ActiveCfg = Release|Win32
+		{C7D40A3A-1E43-40C6-92DF-228A573A6031}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

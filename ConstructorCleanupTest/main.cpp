@@ -11,14 +11,14 @@ int main()
         
     }
     catch (std::exception) {
-        
+        std::cout << "Exception caught, but acquired resources has not been cleared" << std::endl;
     }
     try {
         // negative number, will clean up
         Person s = Person(5, -1, false);
     }
     catch (std::exception) {
-
+        std::cout << "Exception caught, acquired resources has been cleared" << std::endl;
     }
     
     
