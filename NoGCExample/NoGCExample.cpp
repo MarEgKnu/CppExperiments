@@ -20,6 +20,8 @@ void unique_ptr_allocation() {
 int main()
 {
     raw_ptr_allocation();
+    std::cout << "Decallocated raw pointer";
     unique_ptr_allocation();
+    std::cout << "Automatically decallocated unique_ptr";
 }
 
