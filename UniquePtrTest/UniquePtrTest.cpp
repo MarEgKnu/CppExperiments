@@ -36,7 +36,7 @@ void uniquePtrTest() {
 	printPersonDataPtrRef(uniquePersonPtrRef);
 	
 	//second, a const reference to the underlying object which it is pointing to
-	printPersonDataRef(*uniquePersonPtr2.get());
+	printPersonDataRef(*uniquePersonPtr2);
 
 	// once it exists this function, the unique_ptr will automatically be deleted, and its destructor ran.
 }
